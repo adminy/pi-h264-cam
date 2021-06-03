@@ -1,3 +1,4 @@
 node_modules
-public/_main.js
-
+package-lock.json
+dist.js
+webworker.js

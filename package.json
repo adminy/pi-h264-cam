@@ -1,22 +1,19 @@
 {
   "name": "h264-live-stream-demo-server",
-  "private": true,
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
   "scripts": {
-    "install": "cd vendor && npm install",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "browserify index.js -o bundle.js",
+    "start": "node server"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "browserify": "^13.0.0",
+    "debug": "^2.3.2",
+    "discify": "^1.4.2",
     "express": "^3.21.2",
     "mout": "^1.0.0",
     "stream-split": "^1.1.0",
     "stream-throttle": "^0.1.3",
+    "sylvester.js": "^0.1.1",
+    "uclass": "^2.4.0",
     "ws": "^7.2.0"
-  },
-  "devDependencies": {}
+  }
 }
